@@ -8,6 +8,7 @@ const Header = () => {
             <img src={logoIcon} alt="Logo icon" />
             <h1>tutoring-paradise</h1>
         </div>
+        <button></button>
     </header>
   )
 }
