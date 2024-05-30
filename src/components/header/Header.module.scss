@@ -1,18 +1,44 @@
 .header {
-    margin: 0 auto;
-    max-width: 1200px;
-    width: 100%;
-    height: 65px;
-    border-bottom: 1px solid #DCDCDC;
+  width: 100%;
+  height: 65px;
+  border-bottom: 1px solid #dcdcdc;
+  display: flex;
+
+  &__container {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-    &__logo {
-        display: flex;
-        align-items: center;
+  &__logo {
+    display: flex;
+    align-items: center;
 
-        h1 {
-            font-size: 1.7rem;
-            margin-left: .5em;
-        }
+    h1 {
+      font-size: 1.4rem;
+      margin-left: 0.5em;
     }
+  }
+  &__btns {
+    span {
+      margin-right: 0.7em;
+      cursor: pointer;
+      font-size: 1.3rem;
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  .header {
+    &__logo {
+      h1 {
+        font-size: 1.7rem;
+      }
+    }
+    &__btns {
+      span {
+        font-size: 1.5rem;
+      }
+    }
+  }
 }
